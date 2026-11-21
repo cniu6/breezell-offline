@@ -1,0 +1,29 @@
+{
+  "updatedAt": "2026-11-21T02:21:59.780Z",
+  "version": "3.4.12",
+  "files": [
+    "Content_Types_.xml",
+    "docs/ANALYSIS.md",
+    "docs/DELIVERY-INDEX-3.4.3.md",
+    "docs/PROMPT-INVENTORY.md",
+    "docs/gen-inventory.js",
+    "extension.vsixmanifest",
+    "extension/LICENSE.txt",
+    "extension/assets/icon.png",
+    "extension/assets/models-catalog.default.json",
+    "extension/assets/prompts-baseline.json",
+    "extension/package.json",
+    "extension/readme.md",
+    "extension/src/appPatcher.js",
+    "extension/src/browser.js",
+    "extension/src/cloud.js",
+    "extension/src/extension.js",
+    "extension/src/hotfetch.js",
+    "extension/src/memory.js",
+    "extension/src/patchCli.js",
+    "extension/src/profiles.js",
+    "extension/src/targets.js",
+    "extension/tools/rollback.js",
+    "release/breezell-offline-3.4.12.vsix"
+  ]
+}

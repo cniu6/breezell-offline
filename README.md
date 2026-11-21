@@ -96,6 +96,7 @@ docs/
   DELIVERY-INDEX-3.4.3.md  历史交付索引
   gen-inventory.js     清单生成器（换版本可重跑）
 tools/               构建/安装/一键打补丁
+  sync-repo.js       工作副本 → 仓库 单向镜像（见 §4.1）
 release/             最新 vsix 成品
 ```
 
@@ -108,13 +109,28 @@ node tools\pack-vsix.js
 :: → release\breezell-offline-<ver>.vsix（自写 zip：deflate + crc32 + 中央目录）
 ```
 
-版本号三处同步（脚本会读 `extension/package.json`）：
+版本号三处同步（脚本会读 `extension/package.json`，不一致会直接拒绝）：
 
 1. `extension/src/appPatcher.js` → `VERSION`
 2. `extension/package.json` → `version`
 3. `extension.vsixmanifest` → `PackageManifest` / `Identity` 两处 `Version`
 
 换 Breezell 版本时额外改一处：`appPatcher.js` 的 `BREEZELL_SUPPORTED`（面板角标与 CLI 输出用它判断"是否官方声明适配"）。
+
+### 4.1 从工作副本同步进仓库
+
+开发时真正的源码在 `patch\breezell-offline\pkg\`（`install-ext.js` 也读这里），仓库只是镜像。改完代码跑一次：
+
+```bat
+node tools\sync-repo.js --all --check   :: 先看差异，不写盘
+node tools\sync-repo.js --all           :: 写入（extension/ + docs/ + release/）
+git add -A && git commit -m "chore: 同步 v3.4.13" && git push
+```
+
+- **单向**：`pkg` 是权威，仓库里被同步器写过、而源已删除的文件会被一并删掉
+- **不会误删手写内容**：靠 `.sync-manifest.json`（上次同步写过的路径清单）判断，`docs/ARCHITECTURE.md`、`README.md`、`CHANGELOG.md` 这类手写文件永远不在清单里
+- 只镜像 `extension/` 与两个根文件；加 `--docs` 带三份研究文档，加 `--release` 带最新 vsix，`--all` 两者都带
+- 写盘前先验版本三处一致，不一致直接退出，避免把半套版本提交上去
 
 ---
 
