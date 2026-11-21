@@ -1,0 +1,26 @@
+# 运行产物
+*.log
+*.bak
+*.bak-*
+tmp/
+temp/
+node_modules/
+__pycache__/
+
+# 本机数据（配置/记忆/快照含个人信息与凭据，绝不入库）
+breezell-offline-*.json
+!extension/assets/models-catalog.default.json
+!extension/assets/prompts-baseline.json
+state.vscdb*
+*.vscdb
+
+# 备份与临时
+backup-*/
+.breezell-offline-backup/
+*.tmp
+*~
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini

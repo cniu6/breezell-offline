@@ -1,0 +1,187 @@
+{
+  "name": "breezell-offline",
+  "displayName": "Breezell Offline",
+  "description": "Breezell 离线解锁（1.4.4 版）：41 项补丁 + 1.4.51 写保护适配",
+  "version": "3.4.12",
+  "publisher": "local",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onStartupFinished",
+    "onView:breezellOffline.view"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "breezellOffline.apply",
+        "title": "Apply Patch (打补丁)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.restore",
+        "title": "Restore Backup (还原)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.status",
+        "title": "Status (状态)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.probe",
+        "title": "Probe Local Model Endpoints (探测本地模型)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.guide",
+        "title": "Local Model Setup Guide (本地模型接线说明)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.uninstallClean",
+        "title": "Restore & Delete Backups (彻底还原+清备份)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.report",
+        "title": "Report & Panel (状态报告)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.toggleViking",
+        "title": "Viking / Super Memory Switch (记忆开关)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.openLogDir",
+        "title": "Open Log Folder (打开日志目录)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.openPanel",
+        "title": "Control Panel (控制台面板)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.openPanelArea",
+        "title": "Open in Panel Area / Ctrl+J (打开到面板区)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.setSystemPrompt",
+        "title": "Set System Prompt Override (修改内置提示词)",
+        "category": "Breezell Offline"
+      },
+      {
+        "command": "breezellOffline.openConfig",
+        "title": "Open Config File (打开离线配置)",
+        "category": "Breezell Offline"
+      },
+      {
+        "category": "Breezell Offline",
+        "title": "Cloud Models & Pricing (官方模型/倍率)",
+        "command": "breezellOffline.cloud"
+      },
+      {
+        "category": "Breezell Offline",
+        "title": "Open DevTools / F12 (打开开发者工具)",
+        "command": "breezellOffline.openDevTools"
+      },
+      {
+        "category": "Breezell Offline",
+        "title": "Open Browser Workbench (内置浏览器工作台)",
+        "command": "breezellOffline.openBrowserBar"
+      },
+      {
+        "category": "Breezell Offline",
+        "title": "Browser Tabs State (浏览器标签状态)",
+        "command": "breezellOffline.browserState"
+      },
+      {
+        "category": "Breezell Offline",
+        "title": "Config Profiles (配置管理)",
+        "command": "breezellOffline.profiles"
+      },
+      {
+        "category": "Breezell Offline",
+        "title": "Export Config Bundle (导出配置整包)",
+        "command": "breezellOffline.exportBundle"
+      },
+      {
+        "category": "Breezell Offline",
+        "title": "Import Config Bundle (导入配置整包)",
+        "command": "breezellOffline.importBundle"
+      }
+    ],
+    "configuration": {
+      "title": "Breezell Offline",
+      "properties": {
+        "breezellOffline.autoPatchOnStartup": {
+          "type": "boolean",
+          "default": true,
+          "description": "启动时自动重新打补丁（hot-runtime 更新后自愈）。"
+        },
+        "breezellOffline.installDir": {
+          "type": "string",
+          "default": "",
+          "description": "Breezell 安装目录。留空 = 自动探测（BREEZELL_INSTALL_DIR > Breezell.exe 所在目录 > %LOCALAPPDATA%\\Programs\\Breezell > Program Files）。只有装在非常规位置时才需要填。"
+        },
+        "breezellOffline.autoRestoreOnDisable": {
+          "type": "boolean",
+          "default": false,
+          "description": "禁用/卸载本扩展时自动还原为官方原版。默认 false：不改动磁盘文件（补丁仍在），只写标记文件并在下次激活时提醒；要还原请用独立工具目录的「3-还原原版.cmd」。"
+        },
+        "breezellOffline.localEndpoints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "http://127.0.0.1:8098/v1",
+            "http://127.0.0.1:11434/v1",
+            "http://127.0.0.1:8080/v1"
+          ],
+          "description": "本地模型 OpenAI 兼容端点，用于探测。"
+        },
+        "breezellOffline.toolbarBrowserButton": {
+          "type": "boolean",
+          "default": true,
+          "description": "在标题栏（切换面板按钮左边）显示「浏览器工作台」按钮。关闭即隐藏，无需重启。"
+        },
+        "breezellOffline.browserHomeUrl": {
+          "type": "string",
+          "default": "",
+          "description": "内置浏览器首页（工作区级）。留空 = 用离线配置里的 browser.home，再留空 = 默认 https://cn.bing.com。面板「浏览器」页改的也是这里（写到离线配置文件，优先级更高）。"
+        }
+      }
+    },
+    "viewsContainers": {
+      "panel": [
+        {
+          "id": "breezellOffline",
+          "title": "Breezell 离线补丁",
+          "icon": "assets/icon.png"
+        }
+      ]
+    },
+    "views": {
+      "breezellOffline": [
+        {
+          "type": "webview",
+          "id": "breezellOffline.view",
+          "name": "控制台",
+          "contextualTitle": "Breezell 离线补丁"
+        }
+      ]
+    }
+  }
+}

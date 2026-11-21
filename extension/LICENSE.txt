@@ -1,0 +1,2 @@
+Breezell Offline - local offline unlock patch extension.
+MIT License. No warranty. Use on your own machine at your own risk.

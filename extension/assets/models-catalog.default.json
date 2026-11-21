@@ -1,0 +1,3471 @@
+{
+ "source": "workbench.desktop.main.js modelProfiles",
+ "count": 385,
+ "models": [
+  {
+   "id": "LongCat-2.0",
+   "ctx": 1000000.0,
+   "res": 131072.0,
+   "in": 0.3,
+   "out": 1.2,
+   "cr": 0.006,
+   "cw": null
+  },
+  {
+   "id": "LongCat-2.5-Preview",
+   "ctx": 1000000.0,
+   "res": 131072.0,
+   "in": 0.3,
+   "out": 1.2,
+   "cr": 0.006,
+   "cw": null
+  },
+  {
+   "id": "MiMo-V2-Flash",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.1,
+   "out": 0.3,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "MiniMax-M2",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "MiniMax-M2.1",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "MiniMax-M2.1-highspeed",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "MiniMax-M2.5",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "MiniMax-M2.5-highspeed",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "MiniMax-M2.7",
+   "ctx": null,
+   "res": null,
+   "in": 0.3,
+   "out": 1.2,
+   "cr": 0.06,
+   "cw": 0.375
+  },
+  {
+   "id": "MiniMax-M2.7-highspeed",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "MiniMax-M3",
+   "ctx": 1000000.0,
+   "res": 131072.0,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "MiniMaxAI/MiniMax-M2.5",
+   "ctx": 204000.0,
+   "res": 65536.0,
+   "in": 0.27,
+   "out": 0.95,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "Qwen/Qwen3-235B-A22B",
+   "ctx": 131072.0,
+   "res": 32768.0,
+   "in": 0.2,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+   "ctx": 256000.0,
+   "res": 32768.0,
+   "in": 0.09,
+   "out": 0.55,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "Qwen/Qwen3-235B-A22B-Instruct-2507-tput",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.2,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+   "ctx": 256000.0,
+   "res": 65536.0,
+   "in": 0.23,
+   "out": 2.3,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+   "ctx": 256000.0,
+   "res": 65536.0,
+   "in": 0.4,
+   "out": 1.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+   "ctx": 256000.0,
+   "res": 65536.0,
+   "in": 2.0,
+   "out": 2.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "Qwen/Qwen3.5-397B-A17B",
+   "ctx": 262144.0,
+   "res": 65536.0,
+   "in": 0.6,
+   "out": 3.6,
+   "cr": 0.35,
+   "cw": null
+  },
+  {
+   "id": "Xing4.0-29B-A4B",
+   "ctx": 256000.0,
+   "res": 64000.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "ZDTaichu5.0-9B",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "accounts/fireworks/models/deepseek-v3p2",
+   "ctx": 160000.0,
+   "res": 65536.0,
+   "in": 0.26,
+   "out": 0.38,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "accounts/fireworks/models/glm-4p7",
+   "ctx": 202752.0,
+   "res": 65536.0,
+   "in": 0.45,
+   "out": 2.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "accounts/fireworks/models/glm-5",
+   "ctx": 202752.0,
+   "res": 65536.0,
+   "in": 1.0,
+   "out": 3.2,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "accounts/fireworks/models/gpt-oss-120b",
+   "ctx": 128000.0,
+   "res": 32768.0,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": 0.015,
+   "cw": null
+  },
+  {
+   "id": "accounts/fireworks/models/kimi-k2p5",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.5,
+   "out": 2.8,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "accounts/fireworks/models/kimi-k2p6",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.5,
+   "out": 2.8,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "accounts/fireworks/models/llama-v3p3-70b-instruct",
+   "ctx": 131072.0,
+   "res": 32768.0,
+   "in": 0.9,
+   "out": 0.9,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "accounts/fireworks/models/minimax-m2p5",
+   "ctx": 192000.0,
+   "res": 65536.0,
+   "in": 0.27,
+   "out": 0.95,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "accounts/fireworks/models/qwen3-235b-a22b",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.2,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "aion-labs/aion-3.5",
+   "ctx": null,
+   "res": null,
+   "in": 3.0,
+   "out": 6.0,
+   "cr": 0.75,
+   "cw": null
+  },
+  {
+   "id": "aion-labs/aion-3.5-mini",
+   "ctx": null,
+   "res": null,
+   "in": 0.7,
+   "out": 1.4,
+   "cr": 0.18,
+   "cw": null
+  },
+  {
+   "id": "anthropic/claude-3.5-sonnet",
+   "ctx": 200000.0,
+   "res": 8192.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "anthropic/claude-3.7-sonnet",
+   "ctx": 200000.0,
+   "res": 8192.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "anthropic/claude-3.7-sonnet:thinking",
+   "ctx": 200000.0,
+   "res": 8192.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "anthropic/claude-fable-5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 10.0,
+   "out": 50.0,
+   "cr": 1.0,
+   "cw": 12.5
+  },
+  {
+   "id": "anthropic/claude-fable-5.1",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 10.0,
+   "out": 50.0,
+   "cr": 0.25,
+   "cw": 12.5
+  },
+  {
+   "id": "anthropic/claude-haiku-4.5",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 1.0,
+   "out": 5.0,
+   "cr": 0.1,
+   "cw": 1.25
+  },
+  {
+   "id": "anthropic/claude-haiku-5.5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 0.1,
+   "out": 0.5,
+   "cr": 0.01,
+   "cw": 0.125
+  },
+  {
+   "id": "anthropic/claude-opus-4",
+   "ctx": 200000.0,
+   "res": 8192.0,
+   "in": 15.0,
+   "out": 75.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "anthropic/claude-opus-4.1",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 15.0,
+   "out": 75.0,
+   "cr": 1.5,
+   "cw": 18.75
+  },
+  {
+   "id": "anthropic/claude-opus-4.5",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": 6.25
+  },
+  {
+   "id": "anthropic/claude-opus-4.6",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "anthropic/claude-opus-4.7",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": 6.25
+  },
+  {
+   "id": "anthropic/claude-opus-4.8",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": 6.25
+  },
+  {
+   "id": "anthropic/claude-opus-5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": 6.25
+  },
+  {
+   "id": "anthropic/claude-opus-5.5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 4.0,
+   "out": 20.0,
+   "cr": 0.2,
+   "cw": 5.0
+  },
+  {
+   "id": "anthropic/claude-sonnet-4",
+   "ctx": 200000.0,
+   "res": 8192.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": 0.3,
+   "cw": 3.75
+  },
+  {
+   "id": "anthropic/claude-sonnet-4.5",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": 0.3,
+   "cw": 3.75
+  },
+  {
+   "id": "anthropic/claude-sonnet-4.6",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": 0.3,
+   "cw": 3.75
+  },
+  {
+   "id": "anthropic/claude-sonnet-5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 2.0,
+   "out": 10.0,
+   "cr": 0.2,
+   "cw": 2.5
+  },
+  {
+   "id": "anthropic/claude-sonnet-5.5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 2.0,
+   "out": 10.0,
+   "cr": 0.1,
+   "cw": 2.5
+  },
+  {
+   "id": "apodex-1.1-mini",
+   "ctx": null,
+   "res": null,
+   "in": 0.08,
+   "out": 0.8,
+   "cr": 0.008,
+   "cw": null
+  },
+  {
+   "id": "apodex/apodex-1.1-mini:free",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "cat-jam",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "claude-3-5-haiku-20241022",
+   "ctx": 200000.0,
+   "res": 32768.0,
+   "in": 0.8,
+   "out": 4.0,
+   "cr": 0.08,
+   "cw": 1.0
+  },
+  {
+   "id": "claude-3-5-sonnet-20241022",
+   "ctx": 200000.0,
+   "res": 32768.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": 0.3,
+   "cw": 3.75
+  },
+  {
+   "id": "claude-3-7-sonnet-20250219",
+   "ctx": 200000.0,
+   "res": 32768.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": 0.3,
+   "cw": 3.75
+  },
+  {
+   "id": "claude-3-opus-20240229",
+   "ctx": 200000.0,
+   "res": 32768.0,
+   "in": 15.0,
+   "out": 75.0,
+   "cr": 1.5,
+   "cw": 18.75
+  },
+  {
+   "id": "claude-3-sonnet-20240229",
+   "ctx": 200000.0,
+   "res": null,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "claude-fable-5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 10.0,
+   "out": 50.0,
+   "cr": 1.0,
+   "cw": 12.5
+  },
+  {
+   "id": "claude-fable-5-1",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 10.0,
+   "out": 50.0,
+   "cr": 0.25,
+   "cw": 12.5
+  },
+  {
+   "id": "claude-haiku-4-5-20251001",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 1.0,
+   "out": 5.0,
+   "cr": 0.1,
+   "cw": 1.25
+  },
+  {
+   "id": "claude-haiku-5-5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 0.1,
+   "out": 0.5,
+   "cr": 0.01,
+   "cw": 0.125
+  },
+  {
+   "id": "claude-mythos-5-1",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 10.0,
+   "out": 50.0,
+   "cr": 0.25,
+   "cw": 12.5
+  },
+  {
+   "id": "claude-opus-4-1-20250805",
+   "ctx": 200000.0,
+   "res": 32768.0,
+   "in": 15.0,
+   "out": 75.0,
+   "cr": 1.5,
+   "cw": 18.75
+  },
+  {
+   "id": "claude-opus-4-20250514",
+   "ctx": 200000.0,
+   "res": 32768.0,
+   "in": 15.0,
+   "out": 75.0,
+   "cr": 1.5,
+   "cw": 18.75
+  },
+  {
+   "id": "claude-opus-4-5-20251101",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": 6.25
+  },
+  {
+   "id": "claude-opus-4-6",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": 6.25
+  },
+  {
+   "id": "claude-opus-4-7",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": 6.25
+  },
+  {
+   "id": "claude-opus-4-8",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": 6.25
+  },
+  {
+   "id": "claude-opus-5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": 6.25
+  },
+  {
+   "id": "claude-opus-5-5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 4.0,
+   "out": 20.0,
+   "cr": 0.2,
+   "cw": 5.0
+  },
+  {
+   "id": "claude-sonnet-4-20250514",
+   "ctx": 200000.0,
+   "res": 32768.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": 0.3,
+   "cw": 3.75
+  },
+  {
+   "id": "claude-sonnet-4-5-20250929",
+   "ctx": 200000.0,
+   "res": 64000.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": 0.3,
+   "cw": 3.75
+  },
+  {
+   "id": "claude-sonnet-4-6",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": 0.3,
+   "cw": 3.75
+  },
+  {
+   "id": "claude-sonnet-5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 2.0,
+   "out": 10.0,
+   "cr": 0.2,
+   "cw": 2.5
+  },
+  {
+   "id": "claude-sonnet-5-5",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 2.0,
+   "out": 10.0,
+   "cr": 0.1,
+   "cw": 2.5
+  },
+  {
+   "id": "codestral-latest",
+   "ctx": 256000.0,
+   "res": 128000.0,
+   "in": 0.3,
+   "out": 0.9,
+   "cr": 0.03,
+   "cw": null
+  },
+  {
+   "id": "command-a-03-2025",
+   "ctx": 256000.0,
+   "res": 8192.0,
+   "in": 2.5,
+   "out": 10.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "command-a-reasoning-08-2025",
+   "ctx": 256000.0,
+   "res": 32000.0,
+   "in": 2.5,
+   "out": 10.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "command-a-vision-07-2025",
+   "ctx": 128000.0,
+   "res": 8192.0,
+   "in": 2.5,
+   "out": 10.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "command-r-08-2024",
+   "ctx": 128000.0,
+   "res": 4096.0,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "command-r-plus-08-2024",
+   "ctx": 128000.0,
+   "res": 4096.0,
+   "in": 2.5,
+   "out": 10.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "command-r7b-12-2024",
+   "ctx": 128000.0,
+   "res": 4096.0,
+   "in": 0.0375,
+   "out": 0.15,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/DeepSeek-R1",
+   "ctx": 163839.0,
+   "res": 32768.0,
+   "in": 3.0,
+   "out": 7.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/DeepSeek-V3.1",
+   "ctx": 164000.0,
+   "res": 131000.0,
+   "in": 0.27,
+   "out": 1.1,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/DeepSeek-V3.2",
+   "ctx": 160000.0,
+   "res": 65536.0,
+   "in": 0.26,
+   "out": 0.38,
+   "cr": 0.13,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/deepseek-r1-distill-qwen-32b",
+   "ctx": 32768.0,
+   "res": 16384.0,
+   "in": 0.29,
+   "out": 0.59,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/deepseek-v3.1",
+   "ctx": 128000.0,
+   "res": 8192.0,
+   "in": 0.27,
+   "out": 1.1,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/deepseek-v3.2",
+   "ctx": 128000.0,
+   "res": 8192.0,
+   "in": 0.27,
+   "out": 1.1,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/deepseek-v4-flash",
+   "ctx": null,
+   "res": null,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": 0.003,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/deepseek-v4-flash-0731",
+   "ctx": null,
+   "res": null,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": 0.003,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/deepseek-v4-flash-vision-exp",
+   "ctx": null,
+   "res": null,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": 0.003,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/deepseek-v4-pro",
+   "ctx": null,
+   "res": null,
+   "in": 0.66,
+   "out": 1.98,
+   "cr": 0.022,
+   "cw": null
+  },
+  {
+   "id": "deepseek-ai/deepseek-v4-pro-0813",
+   "ctx": null,
+   "res": null,
+   "in": 0.66,
+   "out": 1.98,
+   "cr": 0.022,
+   "cw": null
+  },
+  {
+   "id": "deepseek-chat",
+   "ctx": 128000.0,
+   "res": 8000.0,
+   "in": 0.27,
+   "out": 1.1,
+   "cr": 0.07,
+   "cw": null
+  },
+  {
+   "id": "deepseek-reasoner",
+   "ctx": 128000.0,
+   "res": 64000.0,
+   "in": 0.55,
+   "out": 2.19,
+   "cr": 0.14,
+   "cw": null
+  },
+  {
+   "id": "deepseek-v4-flash",
+   "ctx": 1000000.0,
+   "res": 128000.0,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": 0.003,
+   "cw": null
+  },
+  {
+   "id": "deepseek-v4-flash-vision-exp",
+   "ctx": 1000000.0,
+   "res": 128000.0,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": 0.003,
+   "cw": null
+  },
+  {
+   "id": "deepseek-v4-pro",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.66,
+   "out": 1.98,
+   "cr": 0.022,
+   "cw": null
+  },
+  {
+   "id": "deepseek-v4.1-pro",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek/deepseek-chat-v3-0324:free",
+   "ctx": 128000.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek/deepseek-chat-v3.1",
+   "ctx": 128000.0,
+   "res": null,
+   "in": 0.25,
+   "out": 0.95,
+   "cr": 0.13,
+   "cw": null
+  },
+  {
+   "id": "deepseek/deepseek-r1",
+   "ctx": 128000.0,
+   "res": 64000.0,
+   "in": 0.7,
+   "out": 2.5,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek/deepseek-r1-0528:free",
+   "ctx": 128000.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek/deepseek-r1:free",
+   "ctx": 128000.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek/deepseek-v3.1-terminus",
+   "ctx": 128000.0,
+   "res": null,
+   "in": 0.27,
+   "out": 1.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek/deepseek-v3.2",
+   "ctx": 163840.0,
+   "res": 65536.0,
+   "in": 0.28,
+   "out": 0.42,
+   "cr": 0.028,
+   "cw": null
+  },
+  {
+   "id": "deepseek/deepseek-v3.2-exp",
+   "ctx": 163840.0,
+   "res": 65536.0,
+   "in": 0.27,
+   "out": 0.41,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "deepseek/deepseek-v3.2-speciale",
+   "ctx": 163840.0,
+   "res": 65536.0,
+   "in": 0.4,
+   "out": 1.2,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "devstral-medium-latest",
+   "ctx": 128000.0,
+   "res": 32000.0,
+   "in": 0.4,
+   "out": 2.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "devstral-small-latest",
+   "ctx": 128000.0,
+   "res": 32000.0,
+   "in": 0.07,
+   "out": 0.28,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "dots-studio/dots-3-note-preview",
+   "ctx": null,
+   "res": null,
+   "in": 2.0,
+   "out": 6.0,
+   "cr": 0.2,
+   "cw": null
+  },
+  {
+   "id": "dots-studio/dots-3-note-preview:free",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "dots3-note-prev",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "doubao-1.5-lite-32k",
+   "ctx": 32000.0,
+   "res": 8192.0,
+   "in": 0.042,
+   "out": 0.084,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "doubao-1.5-pro-256k",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.112,
+   "out": 0.28,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "doubao-1.5-pro-32k",
+   "ctx": 32000.0,
+   "res": 8192.0,
+   "in": 0.112,
+   "out": 0.28,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "doubao-seed-2-1-pro",
+   "ctx": 1048576.0,
+   "res": 262144.0,
+   "in": 0.84,
+   "out": 4.2,
+   "cr": 0.168,
+   "cw": null
+  },
+  {
+   "id": "doubao-seed-2-1-pro-260628",
+   "ctx": 256000.0,
+   "res": 32768.0,
+   "in": 0.84,
+   "out": 4.2,
+   "cr": 0.168,
+   "cw": null
+  },
+  {
+   "id": "doubao-seed-2-1-pro-260915",
+   "ctx": 1048576.0,
+   "res": 262144.0,
+   "in": 0.84,
+   "out": 4.2,
+   "cr": 0.168,
+   "cw": null
+  },
+  {
+   "id": "doubao-seed-2-1-turbo",
+   "ctx": 256000.0,
+   "res": 32768.0,
+   "in": 0.42,
+   "out": 2.1,
+   "cr": 0.084,
+   "cw": null
+  },
+  {
+   "id": "doubao-seed-evolving",
+   "ctx": 1048576.0,
+   "res": 262144.0,
+   "in": 0.84,
+   "out": 4.2,
+   "cr": 0.168,
+   "cw": null
+  },
+  {
+   "id": "fledge-alpha",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "fugu-max",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 2.0,
+   "out": 6.0,
+   "cr": 0.25,
+   "cw": null
+  },
+  {
+   "id": "fugu-ultra-v2",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 5.0,
+   "out": 30.0,
+   "cr": 0.5,
+   "cw": null
+  },
+  {
+   "id": "gemini-2.0-flash",
+   "ctx": 1048576.0,
+   "res": 8192.0,
+   "in": 0.1,
+   "out": 0.4,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gemini-2.0-flash-lite",
+   "ctx": 1048576.0,
+   "res": 8192.0,
+   "in": 0.075,
+   "out": 0.3,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gemini-2.5-flash",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 0.3,
+   "out": 2.5,
+   "cr": 0.03,
+   "cw": null
+  },
+  {
+   "id": "gemini-2.5-flash-lite",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 0.1,
+   "out": 0.4,
+   "cr": 0.01,
+   "cw": null
+  },
+  {
+   "id": "gemini-2.5-pro",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 1.25,
+   "out": 10.0,
+   "cr": 0.125,
+   "cw": null
+  },
+  {
+   "id": "gemini-3-pro-preview",
+   "ctx": 1000000.0,
+   "res": 64000.0,
+   "in": 2.0,
+   "out": 12.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gemini-3.1-flash-lite",
+   "ctx": null,
+   "res": null,
+   "in": 0.25,
+   "out": 1.5,
+   "cr": 0.025,
+   "cw": null
+  },
+  {
+   "id": "gemini-3.1-pro-preview",
+   "ctx": 1000000.0,
+   "res": 64000.0,
+   "in": 2.0,
+   "out": 12.0,
+   "cr": 0.2,
+   "cw": null
+  },
+  {
+   "id": "gemini-3.5-flash",
+   "ctx": 1000000.0,
+   "res": 64000.0,
+   "in": 1.5,
+   "out": 9.0,
+   "cr": 0.15,
+   "cw": null
+  },
+  {
+   "id": "gemini-3.5-flash-lite",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 0.3,
+   "out": 2.5,
+   "cr": 0.03,
+   "cw": null
+  },
+  {
+   "id": "gemini-3.5-pro-preview",
+   "ctx": 1000000.0,
+   "res": 64000.0,
+   "in": 2.5,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gemini-3.6-flash",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 0.75,
+   "out": 3.75,
+   "cr": 0.075,
+   "cw": null
+  },
+  {
+   "id": "gemini-3.7-flash",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 0.75,
+   "out": 3.75,
+   "cr": 0.075,
+   "cw": null
+  },
+  {
+   "id": "gemini-3.8-flash",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 0.75,
+   "out": 3.75,
+   "cr": 0.075,
+   "cw": null
+  },
+  {
+   "id": "gemini-4-argon",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 2.0,
+   "out": 10.0,
+   "cr": 0.1,
+   "cw": null
+  },
+  {
+   "id": "glyph-cluster",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "google/gemini-2.0-flash-exp:free",
+   "ctx": 1048576.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "google/gemini-2.0-flash-lite-preview-02-05:free",
+   "ctx": 1048576.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "google/gemini-2.0-pro-exp-02-05:free",
+   "ctx": 1048576.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gpt-4.1",
+   "ctx": 1047576.0,
+   "res": 32768.0,
+   "in": 2.0,
+   "out": 8.0,
+   "cr": 0.5,
+   "cw": null
+  },
+  {
+   "id": "gpt-4.1-mini",
+   "ctx": 1047576.0,
+   "res": 32768.0,
+   "in": 0.4,
+   "out": 1.6,
+   "cr": 0.1,
+   "cw": null
+  },
+  {
+   "id": "gpt-4.1-nano",
+   "ctx": 1047576.0,
+   "res": 32768.0,
+   "in": 0.1,
+   "out": 0.4,
+   "cr": 0.025,
+   "cw": null
+  },
+  {
+   "id": "gpt-4o",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 2.5,
+   "out": 10.0,
+   "cr": 1.25,
+   "cw": null
+  },
+  {
+   "id": "gpt-4o-mini",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": 0.075,
+   "cw": null
+  },
+  {
+   "id": "gpt-5",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 1.25,
+   "out": 10.0,
+   "cr": 0.125,
+   "cw": null
+  },
+  {
+   "id": "gpt-5-mini",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 0.25,
+   "out": 2.0,
+   "cr": 0.025,
+   "cw": null
+  },
+  {
+   "id": "gpt-5-nano",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 0.05,
+   "out": 0.4,
+   "cr": 0.005,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.1",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 1.25,
+   "out": 10.0,
+   "cr": 0.125,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.1-codex",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 1.25,
+   "out": 10.0,
+   "cr": 0.125,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.1-codex-mini",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 0.25,
+   "out": 2.0,
+   "cr": 0.025,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.2",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 1.75,
+   "out": 14.0,
+   "cr": 0.175,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.2-pro",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 21.0,
+   "out": 168.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.3-codex",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 1.75,
+   "out": 14.0,
+   "cr": 0.175,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.4",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 2.5,
+   "out": 15.0,
+   "cr": 0.25,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.4-mini",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 0.75,
+   "out": 4.5,
+   "cr": 0.075,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.4-nano",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 0.2,
+   "out": 1.25,
+   "cr": 0.02,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.4-pro",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 30.0,
+   "out": 180.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.5",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 5.0,
+   "out": 30.0,
+   "cr": 0.5,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.5-instant",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 5.0,
+   "out": 30.0,
+   "cr": 0.5,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.5-pro",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 30.0,
+   "out": 180.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gpt-5.6-cyber",
+   "ctx": 400000.0,
+   "res": 128000.0,
+   "in": 12.5,
+   "out": 75.0,
+   "cr": 1.25,
+   "cw": 15.625
+  },
+  {
+   "id": "gpt-5.6-luna",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 0.2,
+   "out": 1.2,
+   "cr": 0.02,
+   "cw": 0.25
+  },
+  {
+   "id": "gpt-5.6-sol",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 4.0,
+   "out": 20.0,
+   "cr": 0.4,
+   "cw": 5.0
+  },
+  {
+   "id": "gpt-5.6-terra",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 2.0,
+   "out": 12.0,
+   "cr": 0.2,
+   "cw": 2.5
+  },
+  {
+   "id": "gpt-6-astra",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 10.0,
+   "out": 50.0,
+   "cr": 1.0,
+   "cw": 12.5
+  },
+  {
+   "id": "gpt-6-luna",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 0.1,
+   "out": 0.5,
+   "cr": 0.01,
+   "cw": 0.125
+  },
+  {
+   "id": "gpt-6-sol",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 2.0,
+   "out": 10.0,
+   "cr": 0.2,
+   "cw": 2.5
+  },
+  {
+   "id": "gpt-6.1-sol",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 2.0,
+   "out": 10.0,
+   "cr": 0.1,
+   "cw": 2.5
+  },
+  {
+   "id": "gpt-image-2",
+   "ctx": 32000.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gpt-image-2.5",
+   "ctx": 32000.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gpt-image-2.5-flare",
+   "ctx": 32000.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gpt-image-2.5-sunburst",
+   "ctx": 32000.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gpt-oss-120b",
+   "ctx": 131072.0,
+   "res": 32768.0,
+   "in": 0.35,
+   "out": 0.75,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gpt-oss-120b-medium",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "gpt-rosalind",
+   "ctx": 1050000.0,
+   "res": 128000.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": null
+  },
+  {
+   "id": "grok-2",
+   "ctx": 131072.0,
+   "res": 32768.0,
+   "in": 2.0,
+   "out": 10.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "grok-3",
+   "ctx": 131072.0,
+   "res": 16384.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "grok-3-fast",
+   "ctx": 131072.0,
+   "res": 16384.0,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "grok-3-mini",
+   "ctx": 131072.0,
+   "res": 16384.0,
+   "in": 0.3,
+   "out": 0.5,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "grok-3-mini-fast",
+   "ctx": 131072.0,
+   "res": 16384.0,
+   "in": 0.6,
+   "out": 4.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "grok-4",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "grok-4-0709",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "grok-4-fast",
+   "ctx": 1000000.0,
+   "res": 32768.0,
+   "in": 1.25,
+   "out": 2.5,
+   "cr": 0.2,
+   "cw": null
+  },
+  {
+   "id": "grok-4-latest",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "grok-4.1-fast",
+   "ctx": 1000000.0,
+   "res": 32768.0,
+   "in": 1.25,
+   "out": 2.5,
+   "cr": 0.2,
+   "cw": null
+  },
+  {
+   "id": "grok-4.20",
+   "ctx": 1000000.0,
+   "res": 32768.0,
+   "in": 1.25,
+   "out": 2.5,
+   "cr": 0.2,
+   "cw": null
+  },
+  {
+   "id": "grok-4.3",
+   "ctx": 1000000.0,
+   "res": 32768.0,
+   "in": 1.25,
+   "out": 2.5,
+   "cr": 0.2,
+   "cw": null
+  },
+  {
+   "id": "grok-4.5",
+   "ctx": 500000.0,
+   "res": 65536.0,
+   "in": 2.0,
+   "out": 6.0,
+   "cr": 0.3,
+   "cw": null
+  },
+  {
+   "id": "grok-4.5-latest",
+   "ctx": 500000.0,
+   "res": 65536.0,
+   "in": 2.0,
+   "out": 6.0,
+   "cr": 0.3,
+   "cw": null
+  },
+  {
+   "id": "grok-4.6",
+   "ctx": 500000.0,
+   "res": 65536.0,
+   "in": 2.0,
+   "out": 6.0,
+   "cr": 0.5,
+   "cw": null
+  },
+  {
+   "id": "grok-4.7",
+   "ctx": 500000.0,
+   "res": 65536.0,
+   "in": 2.0,
+   "out": 6.0,
+   "cr": 0.5,
+   "cw": null
+  },
+  {
+   "id": "grok-build-0.1",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 1.0,
+   "out": 2.0,
+   "cr": 0.2,
+   "cw": null
+  },
+  {
+   "id": "grok-code-fast-1",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 1.0,
+   "out": 2.0,
+   "cr": 0.2,
+   "cw": null
+  },
+  {
+   "id": "grok-composer-2.5-fast",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "hy3-preview",
+   "ctx": null,
+   "res": null,
+   "in": 0.14,
+   "out": 0.56,
+   "cr": 0.035,
+   "cw": null
+  },
+  {
+   "id": "hy4-preview",
+   "ctx": null,
+   "res": null,
+   "in": 0.84,
+   "out": 2.52,
+   "cr": 0.042,
+   "cw": null
+  },
+  {
+   "id": "inception/mercury-2.5",
+   "ctx": 260000.0,
+   "res": 65536.0,
+   "in": 0.04,
+   "out": 0.15,
+   "cr": 0.004,
+   "cw": null
+  },
+  {
+   "id": "inclusionai/ling-3.0-flash-sante:free",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "k3-256k",
+   "ctx": 262144.0,
+   "res": 62144.0,
+   "in": 1.5,
+   "out": 7.5,
+   "cr": 0.15,
+   "cw": null
+  },
+  {
+   "id": "kat-coder-air-v1",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "kat-coder-air-v2.5",
+   "ctx": 256000.0,
+   "res": 32768.0,
+   "in": 0.14,
+   "out": 0.56,
+   "cr": 0.028,
+   "cw": null
+  },
+  {
+   "id": "kat-coder-pro-v1",
+   "ctx": 256000.0,
+   "res": 32768.0,
+   "in": 0.3,
+   "out": 1.2,
+   "cr": 0.06,
+   "cw": null
+  },
+  {
+   "id": "kat-coder-pro-v2",
+   "ctx": 256000.0,
+   "res": 65536.0,
+   "in": 0.3,
+   "out": 1.2,
+   "cr": 0.06,
+   "cw": null
+  },
+  {
+   "id": "kat-coder-pro-v2.5",
+   "ctx": 256000.0,
+   "res": 65536.0,
+   "in": 0.7,
+   "out": 2.8,
+   "cr": 0.14,
+   "cw": null
+  },
+  {
+   "id": "kimi-for-coding",
+   "ctx": 1048576.0,
+   "res": 62144.0,
+   "in": 0.95,
+   "out": 4.0,
+   "cr": 0.19,
+   "cw": null
+  },
+  {
+   "id": "kimi-for-coding-highspeed",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 1.9,
+   "out": 8.0,
+   "cr": 0.38,
+   "cw": null
+  },
+  {
+   "id": "kimi-k2-0905-preview",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.5,
+   "out": 2.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "kimi-k2-instruct",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.5,
+   "out": 2.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "kimi-k2-thinking",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.5,
+   "out": 2.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "kimi-k2.5",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.6,
+   "out": 3.0,
+   "cr": 0.1,
+   "cw": null
+  },
+  {
+   "id": "kimi-k2.6",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.95,
+   "out": 4.0,
+   "cr": 0.16,
+   "cw": null
+  },
+  {
+   "id": "kimi-k2.7-code",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.95,
+   "out": 4.0,
+   "cr": 0.19,
+   "cw": null
+  },
+  {
+   "id": "kimi-k2.7-code-highspeed",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 1.9,
+   "out": 8.0,
+   "cr": 0.38,
+   "cw": null
+  },
+  {
+   "id": "kimi-k3",
+   "ctx": 1048576.0,
+   "res": 62144.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": 0.3,
+   "cw": 3.0
+  },
+  {
+   "id": "kimi-k4",
+   "ctx": 1048576.0,
+   "res": 62144.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "llama-3.1-8b-instant",
+   "ctx": 128000.0,
+   "res": 8192.0,
+   "in": 0.05,
+   "out": 0.08,
+   "cr": 0.025,
+   "cw": null
+  },
+  {
+   "id": "llama-3.3-70b-versatile",
+   "ctx": 128000.0,
+   "res": 32768.0,
+   "in": 0.59,
+   "out": 0.79,
+   "cr": 0.295,
+   "cw": null
+  },
+  {
+   "id": "llama3.1-8b",
+   "ctx": 131072.0,
+   "res": 8192.0,
+   "in": 0.1,
+   "out": 0.1,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "magistral-medium-latest",
+   "ctx": 256000.0,
+   "res": 40000.0,
+   "in": 2.0,
+   "out": 5.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "magistral-small-latest",
+   "ctx": 256000.0,
+   "res": 40000.0,
+   "in": 0.5,
+   "out": 1.5,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "meta-llama/Llama-3.1-8B-Instruct",
+   "ctx": 128000.0,
+   "res": 8192.0,
+   "in": 0.05,
+   "out": 0.08,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+   "ctx": 131072.0,
+   "res": 32768.0,
+   "in": 1.04,
+   "out": 1.04,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+   "ctx": 1048576.0,
+   "res": 32768.0,
+   "in": 0.27,
+   "out": 0.85,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "meta/llama-3.1-405b-instruct",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 3.5,
+   "out": 3.5,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "meta/llama-3.1-70b-instruct",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 0.59,
+   "out": 0.79,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "meta/llama-3.3-70b-instruct",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 0.59,
+   "out": 0.79,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "meta/llama-4-maverick-17b-128e-instruct",
+   "ctx": 1000000.0,
+   "res": 32768.0,
+   "in": 0.2,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "meta/llama-4-scout-17b-16e-instruct",
+   "ctx": 10000000.0,
+   "res": 32768.0,
+   "in": 0.11,
+   "out": 0.34,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "microsoft/phi-4-mini-flash-reasoning",
+   "ctx": 65536.0,
+   "res": 32768.0,
+   "in": 0.1,
+   "out": 0.3,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "microsoft/phi-4-mini-instruct",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 0.1,
+   "out": 0.3,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "microsoft/phi-4-reasoning-plus:free",
+   "ctx": 32768.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "mimo-v2.5",
+   "ctx": null,
+   "res": null,
+   "in": 0.14,
+   "out": 0.28,
+   "cr": 0.0028,
+   "cw": null
+  },
+  {
+   "id": "mimo-v2.5-pro",
+   "ctx": null,
+   "res": null,
+   "in": 0.435,
+   "out": 0.87,
+   "cr": 0.003625,
+   "cw": null
+  },
+  {
+   "id": "mimo-v2.6-pro",
+   "ctx": null,
+   "res": null,
+   "in": 0.435,
+   "out": 0.87,
+   "cr": 0.003625,
+   "cw": null
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "ctx": 204800.0,
+   "res": 16384.0,
+   "in": 0.27,
+   "out": 1.08,
+   "cr": 0.027,
+   "cw": null
+  },
+  {
+   "id": "minimax/minimax-m2.7",
+   "ctx": 204800.0,
+   "res": 16384.0,
+   "in": 0.21,
+   "out": 0.84,
+   "cr": 0.042,
+   "cw": null
+  },
+  {
+   "id": "minimaxai/minimax-m2.5",
+   "ctx": 204800.0,
+   "res": 128000.0,
+   "in": 0.3,
+   "out": 1.2,
+   "cr": 0.03,
+   "cw": null
+  },
+  {
+   "id": "mistral-large-4-0",
+   "ctx": 1000000.0,
+   "res": 32768.0,
+   "in": 0.68,
+   "out": 2.09,
+   "cr": 0.07,
+   "cw": null
+  },
+  {
+   "id": "mistral-large-latest",
+   "ctx": 128000.0,
+   "res": 32768.0,
+   "in": 0.5,
+   "out": 1.5,
+   "cr": 0.05,
+   "cw": null
+  },
+  {
+   "id": "mistral-medium-latest",
+   "ctx": 256000.0,
+   "res": 32768.0,
+   "in": 1.5,
+   "out": 7.5,
+   "cr": 0.15,
+   "cw": null
+  },
+  {
+   "id": "mistral-small-latest",
+   "ctx": 128000.0,
+   "res": 32768.0,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": 0.015,
+   "cw": null
+  },
+  {
+   "id": "mistralai/codestral-2501",
+   "ctx": 256000.0,
+   "res": null,
+   "in": 0.3,
+   "out": 0.9,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "mistralai/devstral-2-123b-instruct-2512",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.4,
+   "out": 2.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "mistralai/devstral-small:free",
+   "ctx": 130000.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "mistralai/magistral-small-2506",
+   "ctx": 40000.0,
+   "res": 32768.0,
+   "in": 0.5,
+   "out": 1.5,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "mistralai/mistral-large-3-675b-instruct-2512",
+   "ctx": 256000.0,
+   "res": 32768.0,
+   "in": 0.5,
+   "out": 1.5,
+   "cr": 0.05,
+   "cw": null
+  },
+  {
+   "id": "mistralai/mistral-small-3.1-24b-instruct:free",
+   "ctx": 128000.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "mistralai/mistral-small-4-119b-2603",
+   "ctx": 256000.0,
+   "res": 32768.0,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": 0.015,
+   "cw": null
+  },
+  {
+   "id": "moonshotai/Kimi-K2-Instruct",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.6,
+   "out": 2.5,
+   "cr": 0.1,
+   "cw": null
+  },
+  {
+   "id": "moonshotai/Kimi-K2-Instruct-0905",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.6,
+   "out": 2.5,
+   "cr": 0.1,
+   "cw": null
+  },
+  {
+   "id": "moonshotai/Kimi-K2.5",
+   "ctx": 262000.0,
+   "res": 32768.0,
+   "in": 0.45,
+   "out": 2.25,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "moonshotai/Kimi-K2.6",
+   "ctx": 262000.0,
+   "res": 32768.0,
+   "in": 0.45,
+   "out": 2.25,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "moonshotai/kimi-k2-instruct",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.6,
+   "out": 2.5,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "moonshotai/kimi-k2-instruct-0905",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.6,
+   "out": 2.5,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "moonshotai/kimi-k2.5",
+   "ctx": 262144.0,
+   "res": 16384.0,
+   "in": 0.45,
+   "out": 2.25,
+   "cr": 0.07,
+   "cw": null
+  },
+  {
+   "id": "moonshotai/kimi-k2.6",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.465,
+   "out": 2.45,
+   "cr": 0.0975,
+   "cw": null
+  },
+  {
+   "id": "moonshotai/kimi-k3",
+   "ctx": 1048576.0,
+   "res": 62144.0,
+   "in": 3.0,
+   "out": 15.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "muse-spark-1.1",
+   "ctx": null,
+   "res": null,
+   "in": 1.25,
+   "out": 4.25,
+   "cr": 0.15,
+   "cw": null
+  },
+  {
+   "id": "muse-spark-1.2",
+   "ctx": null,
+   "res": null,
+   "in": 1.25,
+   "out": 4.25,
+   "cr": 0.15,
+   "cw": null
+  },
+  {
+   "id": "muse-spark-1.2-contributor",
+   "ctx": null,
+   "res": null,
+   "in": 0.1,
+   "out": 0.2,
+   "cr": 0.002,
+   "cw": null
+  },
+  {
+   "id": "muse-spark-1.3",
+   "ctx": null,
+   "res": null,
+   "in": 1.25,
+   "out": 4.25,
+   "cr": 0.15,
+   "cw": null
+  },
+  {
+   "id": "muse-spark-1.3-contributor",
+   "ctx": null,
+   "res": null,
+   "in": 0.1,
+   "out": 0.2,
+   "cr": 0.002,
+   "cw": null
+  },
+  {
+   "id": "muse-spark-1.4",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "muse-wonder-full-1.0",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "nex-agi/nex-n2.5-mini",
+   "ctx": null,
+   "res": null,
+   "in": 0.025,
+   "out": 0.1,
+   "cr": 0.0025,
+   "cw": null
+  },
+  {
+   "id": "nex-agi/nex-n2.5-pro",
+   "ctx": null,
+   "res": null,
+   "in": 0.075,
+   "out": 0.25,
+   "cr": 0.015,
+   "cw": null
+  },
+  {
+   "id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+   "ctx": 256000.0,
+   "res": 32768.0,
+   "in": 0.085,
+   "out": 0.4,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "nvidia/llama-3.1-nemotron-70b-instruct",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 0.59,
+   "out": 0.79,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+   "ctx": 128000.0,
+   "res": 32768.0,
+   "in": 0.4,
+   "out": 1.2,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
+   "ctx": 128000.0,
+   "res": 32768.0,
+   "in": 0.2,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+   "ctx": 128000.0,
+   "res": 32768.0,
+   "in": 0.2,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "nvidia/nemotron-3-nano-30b-a3b",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.08,
+   "out": 0.2,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "nvidia/nemotron-3-super-120b-a12b",
+   "ctx": 1048576.0,
+   "res": 32768.0,
+   "in": 0.2,
+   "out": 0.8,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "nvidia/nemotron-3-ultra-550b-a55b",
+   "ctx": 1048576.0,
+   "res": 32768.0,
+   "in": 0.5,
+   "out": 2.2,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.08,
+   "out": 0.2,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "o1-mini",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 1.1,
+   "out": 4.4,
+   "cr": 0.55,
+   "cw": null
+  },
+  {
+   "id": "o3-mini",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 1.1,
+   "out": 4.4,
+   "cr": 0.55,
+   "cw": null
+  },
+  {
+   "id": "o4-mini",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 1.1,
+   "out": 4.4,
+   "cr": 0.275,
+   "cw": null
+  },
+  {
+   "id": "omen-alpha",
+   "ctx": null,
+   "res": null,
+   "in": 0.2,
+   "out": 0.66,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "openai/gpt-6-astra-pro:batch",
+   "ctx": null,
+   "res": null,
+   "in": 5.0,
+   "out": 25.0,
+   "cr": 0.5,
+   "cw": 6.25
+  },
+  {
+   "id": "openai/gpt-oss-120b",
+   "ctx": 128000.0,
+   "res": 32768.0,
+   "in": 0.1,
+   "out": 0.5,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nky-nlp-n2-128k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nky-nlp-n2-reasoner-128k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n1-128k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n1-32k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n1-reasoner-128k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n2-128k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n2-32k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n2-reasoner-128k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n2-reasoner-32k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n4-32k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n4-4k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n4-reasoner-128k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-nlp-n4-reasoner-32k",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "pangu-pro-moe",
+   "ctx": null,
+   "res": null,
+   "in": null,
+   "out": null,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "poolside/laguna-m.1",
+   "ctx": 262144.0,
+   "res": 65536.0,
+   "in": 0.2,
+   "out": 0.4,
+   "cr": 0.1,
+   "cw": null
+  },
+  {
+   "id": "poolside/laguna-s-2.1",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 0.09,
+   "out": 0.18,
+   "cr": 0.009,
+   "cw": null
+  },
+  {
+   "id": "poolside/laguna-s-2.1:free",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "poolside/laguna-xs-2.1",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.06,
+   "out": 0.12,
+   "cr": 0.03,
+   "cw": null
+  },
+  {
+   "id": "poolside/laguna-xs-2.1:free",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen-2.5-coder-32b",
+   "ctx": 128000.0,
+   "res": 8192.0,
+   "in": 0.79,
+   "out": 0.79,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen-3-235b-a22b-instruct-2507",
+   "ctx": 131072.0,
+   "res": 32768.0,
+   "in": 0.2,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen-doc-turbo",
+   "ctx": 262144.0,
+   "res": 16384.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen-flash",
+   "ctx": 1000000.0,
+   "res": 32768.0,
+   "in": 0.05,
+   "out": 0.4,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen-long",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 0.072,
+   "out": 0.287,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen-plus",
+   "ctx": 1000000.0,
+   "res": 32768.0,
+   "in": 0.4,
+   "out": 1.2,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen-qwq-32b",
+   "ctx": 128000.0,
+   "res": 32000.0,
+   "in": 0.29,
+   "out": 0.39,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen-2.5-coder-32b-instruct",
+   "ctx": 128000.0,
+   "res": 8192.0,
+   "in": 0.66,
+   "out": 1.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen2.5-coder-32b-instruct",
+   "ctx": 32768.0,
+   "res": 16384.0,
+   "in": 0.79,
+   "out": 0.79,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3-235b-a22b",
+   "ctx": 40960.0,
+   "res": null,
+   "in": 0.455,
+   "out": 1.82,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3-235b-a22b-2507",
+   "ctx": 40960.0,
+   "res": null,
+   "in": 0.09,
+   "out": 0.55,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3-235b-a22b-thinking-2507",
+   "ctx": 40960.0,
+   "res": null,
+   "in": 0.23,
+   "out": 2.3,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3-235b-a22b:free",
+   "ctx": 40960.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3-coder",
+   "ctx": 32000.0,
+   "res": null,
+   "in": 0.3,
+   "out": 1.0,
+   "cr": 0.1,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3-coder-480b-a35b-instruct",
+   "ctx": 262144.0,
+   "res": 65536.0,
+   "in": 0.4,
+   "out": 1.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3-coder:free",
+   "ctx": 32000.0,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3-max",
+   "ctx": 32768.0,
+   "res": null,
+   "in": 0.78,
+   "out": 3.9,
+   "cr": 0.156,
+   "cw": 0.975
+  },
+  {
+   "id": "qwen/qwen3-next-80b-a3b-instruct",
+   "ctx": 262144.0,
+   "res": 32768.0,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3-next-80b-a3b-thinking",
+   "ctx": 262144.0,
+   "res": 81920.0,
+   "in": 0.15,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3-vl-235b-a22b-instruct",
+   "ctx": 40960.0,
+   "res": null,
+   "in": 0.21,
+   "out": 1.9,
+   "cr": 0.1,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3.5-397b-a17b",
+   "ctx": 256000.0,
+   "res": 65536.0,
+   "in": 0.45,
+   "out": 3.0,
+   "cr": 0.22,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3.5-plus-02-15",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 0.26,
+   "out": 1.56,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3.6-plus",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 0.325,
+   "out": 1.95,
+   "cr": null,
+   "cw": 0.4063
+  },
+  {
+   "id": "qwen/qwen3.6-plus:free",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen/qwen3.8-27b",
+   "ctx": null,
+   "res": null,
+   "in": 0.425,
+   "out": 2.55,
+   "cr": 0.085,
+   "cw": 0.5313
+  },
+  {
+   "id": "qwen/qwen3.8-max-0902",
+   "ctx": null,
+   "res": null,
+   "in": 2.0,
+   "out": 6.0,
+   "cr": 0.25,
+   "cw": 2.5
+  },
+  {
+   "id": "qwen/qwq-32b",
+   "ctx": 32768.0,
+   "res": 16384.0,
+   "in": 0.29,
+   "out": 0.39,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3-coder-flash",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 0.3,
+   "out": 1.5,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3-coder-plus",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 1.0,
+   "out": 5.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3-max",
+   "ctx": 256000.0,
+   "res": 65536.0,
+   "in": 1.2,
+   "out": 6.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3-plus",
+   "ctx": 128000.0,
+   "res": 16384.0,
+   "in": 0.05,
+   "out": 0.1,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.5-flash",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.1,
+   "out": 0.4,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.5-open",
+   "ctx": 256000.0,
+   "res": 65536.0,
+   "in": 0.2,
+   "out": 0.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.5-plus",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.4,
+   "out": 2.4,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.6-max-preview",
+   "ctx": 262144.0,
+   "res": 65536.0,
+   "in": 1.3,
+   "out": 7.8,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.6-plus",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.5,
+   "out": 3.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.6-plus-2026-04-02",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.5,
+   "out": 3.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.7-flash",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.03,
+   "out": 0.13,
+   "cr": 0.006,
+   "cw": 0.038
+  },
+  {
+   "id": "qwen3.7-max",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 2.5,
+   "out": 7.5,
+   "cr": 0.25,
+   "cw": null
+  },
+  {
+   "id": "qwen3.7-max-2026-06-08",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 2.5,
+   "out": 7.5,
+   "cr": 0.25,
+   "cw": null
+  },
+  {
+   "id": "qwen3.7-max-preview",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 2.5,
+   "out": 7.5,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.7-plus",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.4,
+   "out": 1.6,
+   "cr": 0.08,
+   "cw": null
+  },
+  {
+   "id": "qwen3.7-plus-2026-05-26",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.4,
+   "out": 1.6,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.8-2.4t-a95b",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 2.0,
+   "out": 6.0,
+   "cr": 0.25,
+   "cw": null
+  },
+  {
+   "id": "qwen3.8-27b",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.5,
+   "out": 3.0,
+   "cr": 0.1,
+   "cw": null
+  },
+  {
+   "id": "qwen3.8-flash",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.15,
+   "out": 0.47,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.8-flash-next",
+   "ctx": 262144.0,
+   "res": 65536.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen3.8-max",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 2.0,
+   "out": 6.0,
+   "cr": 0.25,
+   "cw": null
+  },
+  {
+   "id": "qwen3.8-omni-flash",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.15,
+   "out": 0.47,
+   "cr": 0.016,
+   "cw": null
+  },
+  {
+   "id": "qwen4-27b",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen4-flash",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen4-max",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "qwen4-plus",
+   "ctx": 1000000.0,
+   "res": 65536.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "seed-2.0-lite",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.084,
+   "out": 0.504,
+   "cr": 0.0168,
+   "cw": null
+  },
+  {
+   "id": "seed-2.0-pro",
+   "ctx": 256000.0,
+   "res": 32768.0,
+   "in": 0.448,
+   "out": 2.24,
+   "cr": 0.0896,
+   "cw": null
+  },
+  {
+   "id": "space-bunny",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "space-bunny-alpha",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "stealth/ox-alpha",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "stealth/space-bunny-alpha",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "stealth/union-alpha",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "step-3.5-flash",
+   "ctx": 262144.0,
+   "res": 65536.0,
+   "in": 0.1,
+   "out": 0.3,
+   "cr": 0.02,
+   "cw": null
+  },
+  {
+   "id": "step-3.5-flash-2603",
+   "ctx": 262144.0,
+   "res": 65536.0,
+   "in": 0.1,
+   "out": 0.3,
+   "cr": 0.02,
+   "cw": null
+  },
+  {
+   "id": "step-3.7-flash",
+   "ctx": 262144.0,
+   "res": 65536.0,
+   "in": 0.2,
+   "out": 1.15,
+   "cr": 0.04,
+   "cw": null
+  },
+  {
+   "id": "step-5-preview",
+   "ctx": 1000000.0,
+   "res": 64000.0,
+   "in": 1.0,
+   "out": 2.7,
+   "cr": 0.05,
+   "cw": null
+  },
+  {
+   "id": "unbiased/pareto",
+   "ctx": 262144.0,
+   "res": 65536.0,
+   "in": 2.5,
+   "out": 7.5,
+   "cr": 0.25,
+   "cw": null
+  },
+  {
+   "id": "unbiased/pareto-26.10-preview",
+   "ctx": 1048576.0,
+   "res": 65536.0,
+   "in": 0.8,
+   "out": 3.2,
+   "cr": 0.03,
+   "cw": null
+  },
+  {
+   "id": "union-alpha",
+   "ctx": null,
+   "res": null,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "xiaomi/mimo-v2-flash:free",
+   "ctx": 256000.0,
+   "res": 16384.0,
+   "in": 0.0,
+   "out": 0.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "z-ai/glm-4.6",
+   "ctx": 200000.0,
+   "res": null,
+   "in": 0.43,
+   "out": 1.75,
+   "cr": 0.08,
+   "cw": null
+  },
+  {
+   "id": "z-ai/glm-5",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 0.6,
+   "out": 1.92,
+   "cr": 0.12,
+   "cw": null
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "ctx": 200000.0,
+   "res": 16384.0,
+   "in": 0.966,
+   "out": 3.036,
+   "cr": 0.1794,
+   "cw": null
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "ctx": null,
+   "res": null,
+   "in": 1.4,
+   "out": 4.4,
+   "cr": 0.26,
+   "cw": null
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "ctx": null,
+   "res": null,
+   "in": 1.4,
+   "out": 4.4,
+   "cr": 0.26,
+   "cw": null
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 0.15,
+   "out": 0.5,
+   "cr": 0.03,
+   "cw": null
+  },
+  {
+   "id": "z-ai/glm-5.3-flashx",
+   "ctx": 1000000.0,
+   "res": 16384.0,
+   "in": 0.37,
+   "out": 1.25,
+   "cr": 0.09,
+   "cw": null
+  },
+  {
+   "id": "zai-glm-4.7",
+   "ctx": 131072.0,
+   "res": 32768.0,
+   "in": 0.45,
+   "out": 2.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "zai-org/GLM-4.7",
+   "ctx": 200000.0,
+   "res": 65536.0,
+   "in": 0.45,
+   "out": 2.0,
+   "cr": null,
+   "cw": null
+  },
+  {
+   "id": "zai-org/GLM-5",
+   "ctx": 203000.0,
+   "res": 65536.0,
+   "in": 0.8,
+   "out": 3.2,
+   "cr": null,
+   "cw": null
+  }
+ ]
+}
