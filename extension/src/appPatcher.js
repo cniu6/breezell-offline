@@ -4,9 +4,9 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const cp = require("child_process");
-const VERSION = "3.4.13";
+const VERSION = "3.4.14";
 /* 固定声明：本版补丁锚点针对的 Breezell 版本（换版本时这里要跟着改） */
-const BREEZELL_SUPPORTED = "1.4.64";
+const BREEZELL_SUPPORTED = "1.4.66";
 const MARK = "/*bzl-offline:v1*/";
 const CHECKSUM_KEY = "vs/workbench/workbench.desktop.main.js";
 const MAIN_REL = ["out", "main.app.js"];
@@ -812,9 +812,44 @@ function augmentTheme(root) {
   } catch (e) { out.error = String(e && e.message); return out; }
 }
 
+function ensureRuntimeLinks(root, lines) {
+  var out = { created: [], skipped: [], failed: [] };
+  try {
+    if (!/[\\/]hot-runtime[\\/]/i.test(root)) return out;
+    var appRoot = "";
+    var cands = [
+      path.join(process.env.LOCALAPPDATA || "", "Programs", "Breezell", "resources", "app"),
+      path.join(process.env.ProgramFiles || "C:\\Program Files", "Breezell", "resources", "app")
+    ];
+    for (var i = 0; i < cands.length; i++) {
+      if (fs.existsSync(path.join(cands[i], "out", "main.app.js")) || fs.existsSync(path.join(cands[i], "extensions"))) { appRoot = cands[i]; break; }
+    }
+    if (!appRoot) return out;
+    var names = ["extensions", "node_modules", "resources"];
+    for (var j = 0; j < names.length; j++) {
+      var n = names[j];
+      var dst = path.join(root, n);
+      var src = path.join(appRoot, n);
+      if (fs.existsSync(dst)) { out.skipped.push(n); continue; }
+      if (!fs.existsSync(src)) { out.failed.push(n + "(missing-target)"); continue; }
+      try {
+        fs.symlinkSync(src, dst, "junction");
+        out.created.push(n);
+        log(lines, "INFO", "补建链接 " + n + " -> " + src + " (junction)");
+      } catch (e) {
+        out.failed.push(n + ":" + e.message);
+        log(lines, "ERROR", "补建链接失败 " + n + " :: " + e.message);
+      }
+    }
+  } catch (e) {
+    out.failed.push("exception:" + e.message);
+  }
+  return out;
+}
 function patchRoot(root, lines) {
   var report = { root: root, changed: [], results: [], errors: [] };
   if (!fs.existsSync(root)) { log(lines, "ERROR", "根目录不存在: " + root); report.errors.push("no-root"); return report; }
+  report.links = ensureRuntimeLinks(root, lines);
   var mainApp = path.join(root, MAIN_REL.join(path.sep));
   var wb = path.join(root, WB_REL.join(path.sep));
   var prod = path.join(root, PROD_REL.join(path.sep));
@@ -1192,7 +1227,7 @@ module.exports = {
   findChecker: findChecker,
   VERSION: VERSION, MARK: MARK, BK_DIR: BK_DIR,
   CAPS_OFF: CAPS_OFF, CAPS_PRO: CAPS_PRO,
-  sha256b64: sha256b64, patchRoot: patchRoot, restoreRoot: restoreRoot, syncChecksum: syncChecksum,
+  sha256b64: sha256b64, patchRoot: patchRoot, ensureRuntimeLinks: ensureRuntimeLinks, restoreRoot: restoreRoot, syncChecksum: syncChecksum,
   patchesMainApp: patchesMainApp, patchesWorkbench: patchesWorkbench, patchesProduct: patchesProduct,
   AGENT_REL: AGENT_REL, patchesAgentHost: patchesAgentHost,
   inspectRoot: inspectRoot, planRoot: planRoot, backup: backup, log: log, once: once,

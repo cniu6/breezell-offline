@@ -2,7 +2,7 @@
   "name": "breezell-offline",
   "displayName": "Breezell Offline",
   "description": "Breezell 离线解锁（1.4.4 版）：41 项补丁 + 1.4.51 写保护适配",
-  "version": "3.4.13",
+  "version": "3.4.14",
   "publisher": "local",
   "license": "MIT",
   "engines": {

@@ -6,12 +6,12 @@
 
 | 项 | 值 |
 |---|---|
-| `BREEZELL_SUPPORTED` | `1.4.64`（`appPatcher.js` L8） |
+| `BREEZELL_SUPPORTED` | `1.4.66`（`appPatcher.js` L8） |
 | 已实测安装版 | 1.4.3 / 1.4.4 / 1.4.5 / **1.4.6** |
-| 已实测热运行时 | 1.4.31 / 1.4.33 / 1.4.34 / 1.4.35 / 1.4.36 / 1.4.37 / 1.4.41 / 1.4.51 / 1.4.52 / 1.4.54 / 1.4.55 / 1.4.59 / 1.4.62 / 1.4.63 / **1.4.64** |
+| 已实测热运行时 | 1.4.31 / 1.4.33 / 1.4.34 / 1.4.35 / 1.4.36 / 1.4.37 / 1.4.41 / 1.4.51 / 1.4.52 / 1.4.54 / 1.4.55 / 1.4.59 / 1.4.62 / 1.4.63 / 1.4.64 / **1.4.66** |
 | 补丁定义 | 44 条（有效 28 条 + 软跳过 16 条） |
 
-面板与 CLI 都会对每个根输出 `breezell=<实际版本> (supported | untested, built for 1.4.64)`。
+面板与 CLI 都会对每个根输出 `breezell=<实际版本> (supported | untested, built for 1.4.66)`。
 
 ## 2. 已失效补丁（`OBSOLETE_IDS`）
 
@@ -36,7 +36,7 @@
 | 1.4.37 | 能力对象新增 `hasCloudTelemetry` | `CAPS_DEF_RE3` / `CAPS_DONE_RE` / `capsProOf()` 逐字段改写 |
 | 1.4.37 | 门控变量 `G` → `J`；构造器形参 4 → 5；14056 改 `warn` | A2/B2/B3/F6/F14/F17 全部改形状正则 + 捕获变量 |
 | 1.4.51 | **扩展宿主写保护**（`node:fs` / `workspace.fs` 全 Proxy，`a plugin may not reach …`） | 补丁只能由外部 `node` 进程施加；`PATCH_GUARD` + 面板黄条 |
-| 1.4.51+ | 热运行时目录可能缺 `extensions/node_modules/resources` 三个 junction | `install-hot.js` 建 link；手工场景用 `mklink /J` |
+| 1.4.51+ | 热运行时目录可能缺 `extensions/node_modules/resources` 三个 junction（1.4.54 / 1.4.55 / 1.4.66 均出现） | `patchRoot` 内 `ensureRuntimeLinks()` 自动补建并记日志；`install-hot.js` 亦建 link |
 | 1.4.59 | token 视图对象删除 | `A3` → obsolete |
 | 1.4.6+ | 安装版自带 junction，图标主题从安装根解析 | `theme-augment` 不再因换热运行时失效 |
 

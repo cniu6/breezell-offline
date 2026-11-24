@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-21T15:58:44.491Z",
-  "version": "3.4.13",
+  "updatedAt": "2026-11-24T05:56:19.584Z",
+  "version": "3.4.14",
   "files": [
     "Content_Types_.xml",
     "docs/ANALYSIS.md",
@@ -24,6 +24,6 @@
     "extension/src/profiles.js",
     "extension/src/targets.js",
     "extension/tools/rollback.js",
-    "release/breezell-offline-3.4.13.vsix"
+    "release/breezell-offline-3.4.14.vsix"
   ]
 }
