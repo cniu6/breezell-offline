@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PackageManifest Version="3.4.14" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+<PackageManifest Version="3.4.15" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="breezell-offline" Version="3.4.14" Publisher="local" />
+    <Identity Language="en-US" Id="breezell-offline" Version="3.4.15" Publisher="local" />
     <DisplayName>Breezell Offline (离线解锁 + 官方数据面板)</DisplayName>
     <Description xml:space="preserve">Breezell 离线解锁（1.4.4）：46 项补丁、官方设置面板（直接写官方 globalSettings）、配置管理（整包迁移）、内置浏览器工作台、会话 nonce、DevTools(F12)；已移除热更新依赖。</Description>
     <Tags>Breezell,offline,local model,openai compatible</Tags>

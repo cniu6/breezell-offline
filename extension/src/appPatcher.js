@@ -4,9 +4,9 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const cp = require("child_process");
-const VERSION = "3.4.14";
+const VERSION = "3.4.15";
 /* 固定声明：本版补丁锚点针对的 Breezell 版本（换版本时这里要跟着改） */
-const BREEZELL_SUPPORTED = "1.4.66";
+const BREEZELL_SUPPORTED = "1.4.67";
 const MARK = "/*bzl-offline:v1*/";
 const CHECKSUM_KEY = "vs/workbench/workbench.desktop.main.js";
 const MAIN_REL = ["out", "main.app.js"];
@@ -305,8 +305,10 @@ function log(c, lv, msg) { var line = "[" + new Date().toISOString() + "] [" + l
 function rx(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
 function once(s, needle) { if (!needle) return 0; var n = 0, i = 0; for (;;) { var p = s.indexOf(needle, i); if (p < 0) return n; n++; i = p + needle.length; } }
 
+function _skipIds() { return String(process.env.BZL_SKIP || "").split(",").map(function (x) { return x.trim(); }).filter(Boolean); }
+function _filt(list) { var sk = _skipIds(); if (!sk.length) return list; return list.filter(function (pt) { return sk.indexOf(pt.id) < 0; }); }
 function patchesMainApp() {
-  return [
+  return _filt([
     { id: "A1-caps-default-pro", desc: "capabilityManager 归一化 null 分支 -> pro",
       replacement: "", doneRe: CAPS_DONE_RE,
       validate: function (t) { return CAPS_DEF_RE3.test(t); },
@@ -357,16 +359,14 @@ function patchesMainApp() {
       replacement: PM_DT_SET_ON, doneRe: PM_DT_SET_DONE_RE,
       validate: function (t) { return PM_DT_SET_RE.test(t); },
       find: function (s) { var m = PM_DT_SET_RE.exec(s); return m ? { start: m.index, end: m.index + m[0].length, v: [m[1], m[2], m[3]] } : null; },
-      render: function (rep, loc) { var v = loc.v || []; return rep.split("$1").join(v[0]).split("$2").join(v[1]).split("$3").join(v[2]); } }
-  ];
-}
+      render: function (rep, loc) { var v = loc.v || []; return rep.split("$1").join(v[0]).split("$2").join(v[1]).split("$3").join(v[2]); } }]);}
 
 const BATCH_ON = "gb(e=1e4){const t=";
 const BATCH_OFF = "gb(e=1e4){if(!(globalThis.BreezellOffline&&globalThis.BreezellOffline.allowViking))return;const t=";
 const BATCH_DONE_RE = /gb\(e=1e4\)\{if\(!\!?\(?globalThis\.BreezellOffline/;
 
 function patchesWorkbench() {
-  return [
+  return _filt([
     { id: "B1-default-caps-pro", desc: "capabilityService 默认能力 -> pro",
       replacement: "", doneRe: CAPS_DONE_RE,
       validate: function (t) { return CAPS_DEF_RE3.test(t); },
@@ -606,12 +606,10 @@ function patchesWorkbench() {
       validate: function (t) { return PM_TAIL_RE.test(t); },
       find: function (s) { var m = PM_TAIL_RE.exec(s); return m ? { start: m.index, end: m.index + m[0].length, v: [m[1]] } : null; },
       render: function (rep2, loc) { var v = loc.v || []; return PM_TAIL_ON.split("$V").join(String(v[0] || "")); } }
-
-];
-}
+]);}
 
 function patchesAgentHost() {
-  return [
+  return _filt([
     { id: "D1-caps-default-pro", desc: "agentHost capability 归一化默认 -> pro",
       replacement: "", doneRe: CAPS_DONE_RE,
       validate: function (t) { return CAPS_DEF_RE3.test(t); },
@@ -624,18 +622,14 @@ function patchesAgentHost() {
     { id: "D3-token-view-pro", desc: "agentHost 缓存 token 视图 -> pro",
       replacement: 'function $FN(){return' + MARK + '{exp:Math.floor(Date.now()/1e3)+86400,sm:!0,cp:!0,plan:"pro",sub:"",dev:void 0}}', done: TOK_VIEW,
       find: function (s) { var m = /function (\w+)\(\)\{return \w+\?\w+\(\w+\.raw\):null\}/.exec(s); return m ? { start: m.index, end: m.index + m[0].length, fn: m[1] } : null; },
-      render: function (rep, loc) { return rep.replace("$FN", loc.fn); } }
-  ];
-}
+      render: function (rep, loc) { return rep.replace("$FN", loc.fn); } }]);}
 
 function patchesProduct() {
-  return [
+  return _filt([
     { id: "G1-control-url-off", desc: "扩展市场清单控制 URL 置空(停 5min 轮询)",
       replacement: CTRL_OFF, done: CTRL_OFF,
       validate: function (t) { return CTRL_ANY_RE.test(t) && t.indexOf("marketplace.json") >= 0; },
-      find: function (s) { var m = CTRL_ANY_RE.exec(s); if (!m) return null; if (m[0].indexOf("marketplace.json") < 0) return null; return { start: m.index, end: m.index + m[0].length }; } }
-  ];
-}
+      find: function (s) { var m = CTRL_ANY_RE.exec(s); if (!m) return null; if (m[0].indexOf("marketplace.json") < 0) return null; return { start: m.index, end: m.index + m[0].length }; } }]);}
 
 /* ---- 语法自检：写入后用 node --check 验证目标文件，失败即自动回滚该文件 ---- */
 function nodeCandidates() {
