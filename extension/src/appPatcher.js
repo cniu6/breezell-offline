@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const cp = require("child_process");
-const VERSION = "3.4.15";
+const VERSION = "3.4.16";
 /* 固定声明：本版补丁锚点针对的 Breezell 版本（换版本时这里要跟着改） */
 const BREEZELL_SUPPORTED = "1.4.67";
 const MARK = "/*bzl-offline:v1*/";
@@ -744,19 +744,31 @@ function applyAll(src, patches, lines, label) {
 function backup(root, rels, lines) {
   var dir = path.join(root, BK_DIR), i, src, dst;
   try { fs.mkdirSync(dir, { recursive: true }); } catch (e) {}
+  var created = 0;
   for (i = 0; i < rels.length; i++) {
     src = path.join(root, rels[i].join(path.sep));
     dst = path.join(dir, rels[i].join("__"));
     if (!fs.existsSync(src)) continue;
     if (fs.existsSync(dst)) { log(lines, "INFO", "备份已在: " + dst); continue; }
     fs.copyFileSync(src, dst);
+    created++;
     log(lines, "INFO", "已备份: " + src + "  ->  " + dst);
   }
+  if (created > 0) { try { fs.writeFileSync(path.join(dir, "meta.json"), JSON.stringify(productStamp(root)), "utf8"); } catch (e) {} }
   var note = path.join(dir, "README.txt");
   if (!fs.existsSync(note)) fs.writeFileSync(note, "breezell-offline 自动备份：打补丁前的原始文件；文件名中的 __ 表示路径分隔符。\n恢复方式：把文件拷回原路径，或运行命令 Breezell Offline: Restore。\n", "utf8");
   return dir;
 }
 
+/* 读取根上的 product.json 版本指纹，用于校验备份是否来自同一版本 */
+function productStamp(root) {
+  var o = { version: "", base: "", commit: "", at: new Date().toISOString() };
+  try {
+    var j = JSON.parse(fs.readFileSync(path.join(root, "product.json"), "utf8"));
+    o.version = String(j.breezellVersion || ""); o.base = String(j.breezellBaseVersion || ""); o.commit = String(j.commit || "");
+  } catch (e) {}
+  return o;
+}
 var THEME_REL = ["extensions", "theme-seti", "icons", "vs-seti-icon-theme.json"];
 var THEME_EXT = {
   txt: "_info", log: "_info", out: "_info", err: "_info", trace: "_info",
@@ -946,6 +958,14 @@ function syncChecksum(root, lines) {
 function restoreRoot(root, lines) {
   var dir = path.join(root, BK_DIR), report = { root: root, restored: [] };
   if (!fs.existsSync(dir)) { log(lines, "ERROR", "无备份目录: " + dir); return report; }
+  var meta = null;
+  try { meta = JSON.parse(fs.readFileSync(path.join(dir, "meta.json"), "utf8")); } catch (e) {}
+  var cur = productStamp(root);
+  if (meta && meta.commit && cur.commit && meta.commit !== cur.commit) {
+    log(lines, "ERROR", "拒绝还原：备份来自 commit " + meta.commit + "（v" + (meta.version || "?") + "），当前根是 commit " + cur.commit + "（v" + (cur.version || "?") + "）。跨版本还原会把旧版文件写回新安装，已阻止。若确认要还原，请先删除 " + dir);
+    report.refused = { backup: meta, current: cur };
+    return report;
+  }
   var rels = [MAIN_REL, WB_REL, PROD_REL, AGENT_REL], i, bak, dst;
   for (i = 0; i < rels.length; i++) {
     bak = path.join(dir, rels[i].join("__"));
@@ -1228,6 +1248,7 @@ module.exports = {
   describeRoot: describeRoot, writeReport: writeReport,
   extractModels: extractModels,
   BREEZELL_SUPPORTED: BREEZELL_SUPPORTED,
+  productStamp: productStamp,
   builtinInfo: builtinInfo,
   PM_PURGE_RE: PM_PURGE_RE, defaultBuiltinText: defaultBuiltinText, augmentTheme: augmentTheme
 };
