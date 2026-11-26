@@ -4,9 +4,9 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const cp = require("child_process");
-const VERSION = "3.4.16";
+const VERSION = "3.4.17";
 /* 固定声明：本版补丁锚点针对的 Breezell 版本（换版本时这里要跟着改） */
-const BREEZELL_SUPPORTED = "1.4.67";
+const BREEZELL_SUPPORTED = "1.4.691";
 const MARK = "/*bzl-offline:v1*/";
 const CHECKSUM_KEY = "vs/workbench/workbench.desktop.main.js";
 const MAIN_REL = ["out", "main.app.js"];

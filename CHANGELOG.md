@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.4.17 — 2026-11-26
+- 官方热更新 **1.4.691**（`9767c4141a05`，35,985,034 B）自动跟进到位；`BREEZELL_SUPPORTED = "1.4.691"`。
+- 结构与 1.4.67 一致（476 文件、缺三个 junction），`ensureRuntimeLinks()` 自动补链；28 条命中 / 16 条软跳过 / 0 报错，三根全绿。
+- 此前的**备份版本指纹 + 拒绝跨版本还原**（3.4.16）在本版继续生效，install 根备份 commit 与当前安装一致。
 ## 3.4.16 — 2026-11-24
 - 修复一个真实事故：安装根（Programs\Breezell\resources\app）的 `.breezell-offline-backup` 是 1.4.5 时期留下的，今天误执行 Restore 时把 **1.4.5 的 main.app.js / workbench / product.json 写回了 1.4.6 安装根**，导致安装根版本号显示 1.4.5。已用 1.4.6 安装包覆盖重装并把备份重建为 1.4.6 版本。
 - 新增**备份版本指纹**：`backup()` 在新建备份时写 `.breezell-offline-backup/meta.json`（`breezellVersion` / `breezellBaseVersion` / `commit` / 时间）；`restoreRoot()` 先比对备份与当前根 product.json 的 commit，不一致就直接拒绝还原并说明原因（`report.refused`）。跨版本 Restore 从此不会再把旧文件写回新安装。
